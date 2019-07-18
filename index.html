@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LiteStar</title>
+    <link rel="icon" type="image/png" href="./image/logo.png">
+    <style type="text/css">
+        header, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            height: auto;
+        }
+
+        body {
+            background: url("./image/background.jpg") center;
+            background-size: cover;
+            font-family: Arial;
+            position: relative;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #header {
+            background: #29bbec;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 76px;
+        }
+
+        #header ul {
+            margin: 0 30px 0 0;
+        }
+
+        #header ul li {
+            cursor: pointer;
+            margin: 0 9px 0 9px;
+            display: inline-block;
+            color: white;
+            font-size: 18px;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: calc(100vh - 146px);
+            padding: 12px;
+        }
+
+        #main-1 {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+            max-width: 400px;
+            margin-top: 24px;
+            margin-bottom: 48px;
+        }
+
+        #main-2 {
+            color: #29bbec;
+            font-size: 50px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+            display: flex;
+            align-items: center;
+            margin-bottom: 48px;
+        }
+
+        #main-2 img {
+            margin-right: 8px;
+        }
+
+        #main-3 {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+            margin-bottom: 48px;
+        }
+
+        #main-4 {
+            margin-bottom: 120px;
+        }
+
+        #download-button {
+            cursor: pointer;
+            background: #fd7c23;
+            width: 280px;
+            color: white;
+            box-shadow: 0 2px 3px 0 rgba(0,0,0,0.75);
+            border-radius: 12px;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #download-button img {
+            height: 24px;
+            width: auto;
+            margin: 0 6px 0 6px;
+        }
+
+        #footer {
+            background: white url("./image/logo.png") no-repeat left center;
+            background-position-x: 12px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            padding-left: 70px;
+            box-sizing: border-box;
+            line-height: 1.4;
+        }
+
+        #footer ul {
+            margin: 0 30px 0 0;
+        }
+
+        #footer ul li {
+            cursor: pointer;
+            margin: 0 3px 0 3px;
+            display: inline-block;
+        }
+
+        #footer ul li:after {
+            content: '|';
+            margin-left: 6px;
+            display: inline-block;
+        }
+
+        #footer ul li:last-child:after {
+            content: '';
+        }
+
+        @media (max-width: 400px) {
+            #header ul {
+                margin: 0 12px 0 0;
+            }
+
+            #header ul li {
+                margin: 0 6px 0 6px;
+                font-size: 14px;
+            }
+
+            #footer ul li {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <img id="logo" src="./image/litestar.png" />
+    <ul>
+        <li>HOME</li>
+        <li>FAQ</li>
+        <li>FORUM</li>
+    </ul>
+</div>
+<div id="main">
+    <div id="main-1">CAN'T PLAY LATEST GAMES ON YOUR SMARTPHONE?</div>
+    <div id="main-2"><img src="./image/logo.png" />LITESTAR</div>
+    <div id="main-3">IS THE SOLUTION FOR YOU!</div>
+    <div id="main-4">
+        <div id="download-button" onclick="window.open('https://google.com')">
+            <div style="font-size: 24px">Download Now</div>
+            <div style="font-size: 12px">For Android</div>
+            <div style="margin-top: 10px;"><img src="./image/logo.png" /><img src="./image/android.png" /></div>
+        </div>
+    </div>
+</div>
+<div id="footer">
+    <ul>
+        <li>LiteStar</li><li>Copyright</li><li>Contact Us</li><li>Privacy Policy</li><li>About LiteStar</li>
+    </ul>
+</div>
+</body>
+</html>
