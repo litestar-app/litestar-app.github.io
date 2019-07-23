@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>LiteStar</title>
     <link rel="icon" type="image/png" href="./image/logo.png">
     <style type="text/css">
@@ -98,7 +99,6 @@
         }
 
         #download-button {
-            cursor: pointer;
             background: #fd7c23;
             width: 280px;
             color: white;
@@ -165,32 +165,482 @@
                 font-size: 12px;
             }
         }
+        .content {
+            background: white;
+            padding: 20px;
+            display: none;
+            min-width: 200px;
+            min-height: calc(100vh - 175px);
+            text-align: left;
+        }
+        .button {
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+            margin-top: -15px;
+            margin-right: -15px;
+            
+        }
     </style>
 </head>
+<script>
+function showMain() {
+    var elements = document.getElementsByClassName('main');
+    for (var i = 0 ; i < elements.length ; i++) {
+        elements.item(i).style.display = "";
+    }
+    var elements = document.getElementsByClassName('content');
+    for (var i = 0 ; i < elements.length ; i++) {
+        elements.item(i).style.display = "none";
+    }
+}
+function showContent(contentId)
+{
+    var elements = document.getElementsByClassName('content');
+    for (var i = 0 ; i < elements.length ; i++) {
+        elements.item(i).style.display = "none";
+    }
+    var content = document.getElementById(contentId);
+    content.style.display = "block";
+    var elements = document.getElementsByClassName('main');
+    for (var i = 0 ; i < elements.length ; i++) {
+        elements.item(i).style.display = "none";
+    }
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 <body>
 <div id="header">
     <img id="logo" src="./image/litestar.png" />
     <ul>
-        <li>HOME</li>
+        <li onclick="showMain()">HOME</li>
         <li>FAQ</li>
         <li>FORUM</li>
     </ul>
 </div>
 <div id="main">
-    <div id="main-1">CAN'T PLAY LATEST GAMES ON YOUR SMARTPHONE?</div>
-    <div id="main-2"><img src="./image/logo.png" />LITESTAR</div>
-    <div id="main-3">IS THE SOLUTION FOR YOU!</div>
-    <div id="main-4">
-        <div id="download-button" onclick="window.open('https://google.com')">
-            <div style="font-size: 24px">Download Now</div>
+    <div id="main-1" class="main">CAN'T PLAY LATEST GAMES ON YOUR SMARTPHONE?</div>
+    <div id="main-2" class="main"><img src="./image/logo.png" />LITESTAR</div>
+    <div id="main-3" class="main">IS THE SOLUTION FOR YOU!</div>
+    <div id="main-4" class="main">
+        <div id="download-button">
+            <div style="font-size: 24px">Coming Soon</div>
             <div style="font-size: 12px">For Android</div>
             <div style="margin-top: 10px;"><img src="./image/logo.png" /><img src="./image/android.png" /></div>
         </div>
     </div>
+
+    <div class="content" id="PrivacyPolicy">
+     <div style="border-bottom:solid 1px gray;"><b> Privacy Policy </b><button style="float:right" onclick="showMain()">Close</button></div><br/>
+<p align="justify" style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">The
+terms &quot;We&quot; / &quot;Us&quot; / &quot;Our&quot;/&#34;Company&#34; </span></font></font><font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">individually
+and collectively refer to LiteStar</span></font></font><span style="background: #ffffff">
+</span><font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">App</span></font></font><span style="background: #ffffff">
+</span><font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">and
+the terms &quot;You&quot; /&quot;Your&quot; / &quot;Yourself&quot;
+refer to the users. </span></font></font>
+</p>
+<p align="justify" style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">This
+Privacy Policy is an electronic record in the form of an electronic
+contract formed under the information Technology Act, 2000 and the
+rules made thereunder and the amended provisions pertaining to
+electronic documents / records in various statutes as amended by the
+information Technology Act, 2000. This Privacy Policy does not
+require any physical, electronic or digital signature.</font></font></p>
+<p align="justify" style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">This
+Privacy Policy is a legally binding document between you and LiteStar</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">App</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">(both
+terms defined below). The terms of this Privacy Policy will be
+effective upon your acceptance of the same (directly or indirectly in
+electronic form, by clicking on the I accept tab or by use of the App</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">or
+by other means) and will govern the relationship between you and
+LiteStar</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">app</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">for
+your use of the App</font></font> "<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>APP</b></font></font>"
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">(defined
+below).</font></font></p>
+<p align="justify" style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">This
+document is published and shall be construed in accordance with the
+provisions of the Information Technology (reasonable security
+practices and procedures and sensitive personal data of information)
+rules, 2011 under Information Technology Act, 2000; that require
+publishing of the Privacy Policy for collection, use, storage and
+transfer of sensitive personal data or information.</font></font></p>
+<p align="justify" style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">Please
+read this Privacy Policy carefully</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">by
+using the App, you indicate that you understand, agree and consent to
+this Privacy Policy. If you do not agree with the terms of this
+Privacy Policy, please do not use this App. </font></font>
+</p>
+<p align="justify" style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">By
+providing us your Information or by making use of the facilities
+provided by the App, You</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">hereby
+consent to the collection, storage, processing and transfer of any or
+all of Your Personal Information and Non-Personal Information by us
+as specified under this Privacy Policy. You further agree that such
+collection, use, storage and transfer of Your Information shall not
+cause any loss or wrongful gain to you or any other person.</font></font></p>
+<p style="margin-top: 0.25cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>USER</b></font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>INFORMATION</b></font></font>
+</p>
+<p style="margin-top: 0.25cm; margin-bottom: 0cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">To
+avail certain services on our Apps, users are required to provide
+certain information for the</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">registration
+process namely: -</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">a)
+your name, b) email address, c) sex, d) age, e) PIN code,</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">f)
+credit card or debit card details g) medical records and history h)
+sexual orientation, i) biometric information, j) password etc., and /
+or your occupation, interests, and the like. The Information as
+supplied by the users enables us to improve our app</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">and
+provide you the most user-friendly experience.</font></font><br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">All
+required information is service dependent and we</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">may
+use the above said user information to, maintain, protect, and
+improve its services (including advertising services) and for
+developing new services</font></font><br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">Such
+information will not be considered as sensitive if it is freely
+available and accessible in the public domain or is furnished under
+the Right to Information Act, 2005 or any other law for the time
+being in force.</font></font><br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>COOKIES</b></font></font><br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">To
+improve the responsiveness of the sites for our users, we may use
+&quot;cookies&quot;, or similar electronic tools to collect
+information to assign each visitor a unique, random number as a User
+Identification (User ID) to understand the user's individual
+interests using the Identified Computer. Unless you voluntarily
+identify yourself (through registration, for example), we will have
+no way of knowing who you are, even if we assign a cookie to your
+computer. The only personal information a cookie can contain is
+information you supply (an example of this is when you ask for our
+Personalised Horoscope). A cookie cannot read data off your hard
+drive. Our advertisers may also assign their own cookies to your
+browser (if you click on their ads), a process that we do not
+control.</font></font> <br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">Our
+web servers automatically collect limited information about your
+computer's connection to the Internet, including your IP address,
+when you visit our site. (Your IP address is a number that lets
+computers attached to the Internet know where to send you data --
+such as the web pages you view.) Your IP address does not identify
+you personally. We use this information to deliver our web pages to
+you upon request, to tailor our site to the interests of our users,
+to measure traffic within our site and let advertisers know the
+geographic locations from where our visitors come.</font></font> 
+</p>
+<p style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+ 
+</p>
+<p style="margin-top: 0.25cm; background: #ffffff; line-height: 100%">
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>INFORMATION</b></font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>SHARING</b></font></font><br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">We</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">don't
+share</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">sensitive
+personal information to any third party without obtaining the prior
+consent of the user in the following limited circumstances:</font></font><br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>(a)</b></font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">When
+it is requested or required by law or by any court or governmental
+agency or authority to disclose, for the purpose of verification of
+identity, or for the prevention, detection, investigation including
+cyber incidents, or for prosecution and punishment of offences. These
+disclosures are made in good faith and belief that such disclosure is
+reasonably necessary for enforcing these Terms; for complying with
+the applicable laws and regulations.</font></font> <br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>(b)</b></font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">We</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">propose</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">to
+share such information within its group companies and officers and
+employees of such group companies for the purpose of processing
+personal information on its behalf. We also ensure that these
+recipients of such information agree to process such information
+based on our instructions and in compliance with this Privacy Policy
+and any other appropriate confidentiality and security
+measures.</font></font><br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>INFORMATION
+SECURITY</b></font></font><br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">We
+take appropriate security measures to protect against unauthorized
+access to or unauthorized alteration, disclosure or destruction of
+data. These include internal reviews of our data collection, storage
+and processing practices and security measures, including appropriate
+encryption and physical security measures to guard against
+unauthorized access to systems where we store personal data.</font></font><br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">All
+information gathered on our App</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">is
+securely stored within our</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt">controlled
+database. The database is stored on servers secured behind a
+firewall; access to the servers is password-protected and is strictly
+limited. However, as effective as our security measures are, no
+security system is impenetrable. We cannot guarantee the security of
+our database, nor can we guarantee that information you supply will
+not be intercepted while being transmitted to us over the Internet.
+And, of course, any information you include in a posting to the
+discussion areas is available to anyone with Internet access.</font></font>
+<br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">However
+the internet is an ever evolving medium. We may change our Privacy
+Policy from time to time to incorporate necessary future changes. Of
+course, our use of any information we gather will always be
+consistent with the policy under which the information was collected,
+regardless of what the new policy may be.</font></font> <br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>Grievance
+Redressal</b></font></font><br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">Redressal
+Mechanism: Any complaints, abuse or concerns with regards to content
+and or comment or breach of these terms shall be immediately informed
+to the designated Grievance Officer as mentioned below via in writing
+or through email signed with the electronic signature to</font></font>
+.................<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">..</font></font>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">(&quot;Grievance
+Officer&quot;).</font></font> <br/>
+<br/>
+<font face="Arimo, Arial"><font size="2" style="font-size: 10pt">Mr.
+Andy Beckman</font></font> <font face="Arimo, Arial"><font size="2" style="font-size: 10pt"><b>(Grievance
+Officer)</b></font></font><br/>
+<font face="Liberation Serif, Times New Roman"><font size="3" style="font-size: 12pt">LiteStar</font></font>
+<font face="Liberation Serif, Times New Roman"><font size="3" style="font-size: 12pt">App</font></font></p>
+<p><font face="Arimo, Arial"><font size="2" style="font-size: 10pt">Email:</font></font>
+<a href="mailto:help@litestar.app"><font color="#0000ff"><font face="Arimo, Arial"><font size="2" style="font-size: 10pt">help@litestar.app</font></font></font></a>
+<br/>
+<br/>
+<br/>
+</p>
+    </div>
+    <div class="content" id="TermsAndConditions" style="overflow:hidden;" >
+     <div style="border-bottom:solid 1px gray;"><b> Terms and Conditions </b><button style="float:right" onclick="showMain()">Close</button></div><br/>
+<p align="center" style="margin-bottom: 0.28cm; line-height: 100%"><font face="Arial, serif"><font size="2" style="font-size: 10pt"><u><b><span style="background: #ffffff">TERMS
+AND CONDITIONS</span></b></u></font></font></p>
+<p style="margin-top: 0.26cm; margin-bottom: 0.26cm; line-height: 100%">
+<font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">The
+terms &quot;We&quot; / &quot;Us&quot; / &quot;Our&quot;/"Company"
+individually and collectively refer to LiteStar App and the terms
+&quot;Visitor" "User" refer to the users. </span></font></font></font></font>
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">This
+page states the Terms and Conditions under which you (Visitor) may
+visit this App ("App"). Please read this page carefully. If you
+do not accept the Terms and Conditions stated here, we would request
+you to exit this App. The business, any of its business divisions and
+/ or its subsidiaries, associate companies or subsidiaries to
+subsidiaries or such other investment companies (in India or abroad)
+reserve their respective rights to revise these Terms and Conditions
+at any time by updating this posting. You should visit this page
+periodically to re-appraise yourself of the Terms and Conditions,
+because they are binding on all users of this App.</span></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><b><font face="Arial, serif"><font size="2" style="font-size: 10pt">USE
+OF CONTENT</font></font></b><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">All
+logos, brands, marks headings, labels, names, signatures, numerals,
+shapes or any combinations thereof, appearing in this site, except as
+otherwise noted, are properties either owned, or used under license,
+by the business and / or its associate entities who feature on this
+App. The use of these properties or any other content on this site,
+except as provided in these terms and conditions or in the site
+content, is strictly prohibited.</span></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">You
+may not sell or modify the content of this App  or reproduce,
+display, publicly perform, distribute, or otherwise use the materials
+in any way for any public or commercial purpose without the
+respective organisation's or entity's written
+permission.</span></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><b><font face="Arial, serif"><font size="2" style="font-size: 10pt">ACCEPTABLE
+APP USE</font></font></b><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffffff">(A)
+Security Rules</span></b></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">Visitors
+are prohibited from violating or attempting to violate the security
+of the app, including, without limitation, (1) accessing data not
+intended for such user or logging into a server or account which the
+user is not authorised to access, (2) attempting to probe, scan or
+test the vulnerability of a system or network or to breach security
+or authentication measures without proper authorisation, (3)
+attempting to interfere with service to any user, host or network,
+including, without limitation, via means of submitting a virus or
+&quot;Trojan horse&quot; to the App, overloading, &quot;flooding&quot;,
+&quot;mail bombing&quot; or &quot;crashing&quot;, or (4) sending
+unsolicited electronic mail, including promotions and/or advertising
+of products or services. Violations of system or network security may
+result in civil or criminal liability. The business and / or its
+associate entities will have the right to investigate occurrences
+that they suspect as involving such violations and will have the
+right to involve, and cooperate with, law enforcement authorities in
+prosecuting users who are involved in such violations.</span></font></font></p>
+<p style="margin-bottom: 0cm; line-height: 100%"><a name="_GoBack"></a>
+<font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #ffffff">(B)
+General Rules</span></b></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">Visitors
+may not use the App in order to transmit, distribute, store or
+destroy material (a) that could constitute or encourage conduct that
+would be considered a criminal offence or violate any applicable law
+or regulation, (b) in a manner that will infringe the copyright,
+trademark, trade secret or other intellectual property rights of
+others or violate the privacy or publicity of other personal rights
+of others, or (c) that is libellous, defamatory, pornographic,
+profane, obscene, threatening, abusive or hateful.</span></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><b>INDEMNITY</b></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+The
+User unilaterally agree to indemnify and hold harmless, without
+objection, the Company, its officers, directors, employees and agents
+from and against any claims, actions and/or demands and/or
+liabilities and/or losses and/or damages whatsoever arising from or
+resulting from their use of LiteStar App or their breach of the terms
+. </font></font>
+</p>
+<p style="margin-left: 1.27cm; margin-top: 0.11cm; margin-bottom: 0.08cm; line-height: 100%">
+<br/>
+<br/>
+
+</p>
+<p style="margin-top: 0.11cm; margin-bottom: 0.08cm; line-height: 100%">
+<font face="Arial, serif"><font size="2" style="font-size: 10pt"><b>LIABILITY	</b></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt">User
+agrees that neither <a href="https://litestar.app/">Company</a>
+nor its group companies, directors, officers or employee shall be
+liable for any direct or/and indirect or/and incidental or/and
+special or/and consequential or/and exemplary damages, resulting from
+the use or/and the inability to use the service or/and for cost of
+procurement of substitute goods or/and services or resulting from any
+goods or/and data or/and information or/and services purchased or/and
+obtained or/and messages received or/and transactions entered into
+through or/and from the service or/and resulting from unauthorized
+access to or/and alteration of user's transmissions or/and data
+or/and arising from any other matter relating to the service,
+including but not limited to, damages for loss of profits or/and use
+or/and data or other intangible, even if <a href="https://litestar.app/">Company</a>
+has been advised of the possibility of such damages. </font></font>
+</p>
+<p style="margin-top: 0.11cm; margin-bottom: 0.08cm; line-height: 100%">
+<font face="Arial, serif"><font size="2" style="font-size: 10pt">User
+further agrees that <a href="https://litestar.app/">Company</a>
+shall not be liable for any damages arising from interruption,
+suspension or termination of service, including but not limited to
+direct or/and indirect or/and incidental or/and special consequential
+or/and exemplary damages, whether such interruption or/and suspension
+or/and termination was justified or not, negligent or intentional,
+inadvertent or advertent. </font></font>
+</p>
+<p style="margin-top: 0.11cm; margin-bottom: 0.08cm; line-height: 100%">
+<font face="Arial, serif"><font size="2" style="font-size: 10pt">User
+agrees that <a href="https://litestar.app/">Company</a> shall
+not be responsible or liable to user, or anyone, for the statements
+or conduct of any third party of the service. In sum, in no event
+shall Company's total liability to the User for all damages or/and
+losses or/and causes of action exceed the amount paid by the User to
+<a href="https://litestar.app/">Company</a>, if any, that is
+related to the cause of action.</font></font></p>
+<p style="margin-bottom: 0.28cm; line-height: 100%"><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+</font></font><b><font face="Arial, serif"><font size="2" style="font-size: 10pt">DISCLAIMER
+OF CONSEQUENTIAL DAMAGES</font></font></b><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">In
+no event shall Company or any parties, organizations or entities
+associated with the corporate brand name us or otherwise, mentioned
+at this App be liable for any damages whatsoever (including, without
+limitations, incidental and consequential damages, lost profits, or
+damage to computer hardware or loss of data information or business
+interruption) resulting from the use or inability to use the App and
+the App material, whether based on warranty, contract, tort, or any
+other legal theory, and whether or not, such organization or entities
+were advised of the possibility of such damages.</span></font></font></p>
+<p style="margin-bottom: 0.28cm; line-height: 108%"><br/>
+<br/>
+
+</p>
+    </div> <!-- end of TermsAndConditions -->
+    <div class="content" id="RefundPolicy" style="overflow:hidden;" >
+     <div style="border-bottom:solid 1px gray;"><b> Refund and Cancellation Policy </b><button style="float:right" onclick="showMain()">Close</button></div><br/>
+<p align="center" style="margin-left: 0.64cm; margin-bottom: 0.28cm; line-height: 100%">
+<b><font face="Arial, serif"><font size="3" style="font-size: 12pt">Refund
+and Cancellation Policy</font></font></b></p>
+<p style="margin-bottom: 0.28cm; line-height: 100%"><br/>
+<font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">Our
+focus is complete customer satisfaction. In the event, if you are
+displeased with the services provided, we will refund back the money,
+provided the reasons are genuine and proved after investigation.
+Please read the fine prints of each deal before buying it, it
+provides all the details about the services or the product you
+purchase.</span></font></font><br/>
+<br/>
+<font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">In
+case of dissatisfaction from our services, users have the liberty to
+request a refund from us. Our Policy for the cancellation and refund
+will be as follows:</span></font></font></p>
+<p style="margin-bottom: 0.28cm; line-height: 100%"> <b><font face="Arial, serif"><font size="2" style="font-size: 10pt">Cancellation
+Policy</font></font></b><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">For
+Cancellations please contact the us via contact us link or write to
+us @ <a href="mailto:help@litestar.app">help@litestar.app</a> along
+with your registered mobile number and issue.</span></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">&nbsp;</span></font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><b><font face="Arial, serif"><font size="2" style="font-size: 10pt">Refund
+Policy</font></font></b><font face="Arial, serif"><font size="2" style="font-size: 10pt"><br/>
+<br/>
+</font></font><font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">If
+paid by Paytm Wallet, refunds will be issued to the original Paytm
+Wallet provided at the time of purchase and in case of payment
+gateway name payments refund will be made to the same account.</span></font></font></p>
+<p style="margin-bottom: 0.28cm; line-height: 100%"><a name="_GoBack"></a>
+<font face="Arial, serif"><font size="2" style="font-size: 10pt"><span style="background: #ffffff">Please
+write to write to us @ <a href="mailto:help@litestar.app">help@litestar.app</a>
+along with your registered mobile number and why you need a refund.
+</span></font></font>&nbsp;<br/>
+<br/><br/></p>
+<p style="margin-bottom: 0.28cm; line-height: 108%"><br/><br/>
+</p>
+
+    </div> <!-- end of RefundPolicy -->
+    <div class="content" id="content1" style="overflow:hidden;" >
+     <div style="border-bottom:solid 1px gray;"><b> Template title </b><button style="float:right" onclick="showMain()">Close</button></div><br/>
+
+
+    </div>
 </div>
 <div id="footer">
     <ul>
-        <li>LiteStar</li><li>Copyright</li><li>Contact Us</li><li>Privacy Policy</li><li>About LiteStar</li>
+        <li onclick="showMain()">LiteStar</li>
+        <li onclick="showContent('PrivacyPolicy')">Privacy Policy</li>
+        <li onclick="showContent('TermsAndConditions')">Terms and Conditions</li>
+        <li onclick="showContent('RefundPolicy')">Refund Policy</li>
+        <li style="cursor:text;">About LiteStar</li>
+        <li style="cursor:text;">Copyright &copy; 2019-2020, LiteStar.app </li>
     </ul>
 </div>
 </body>
