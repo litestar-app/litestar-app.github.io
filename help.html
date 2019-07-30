@@ -1,103 +1,161 @@
-
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script>document.getElementsByTagName("html")[0].className += " js";</script>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>FAQ - LiteStar</title>
-</head>
-<body>
-  <section class="cd-faq js-cd-faq container max-width-md margin-top-lg margin-bottom-lg">
-    <ul class="cd-faq__categories">
-      <!--
-      <li><a class="cd-faq__category cd-faq__category-selected truncate" href="#basics">Basics</a></li>
-      -->
-    </ul>
-    <div class="cd-faq__items">
-    <ul class="cd-faq__group">
-    <!--
-    <ul id="basics" class="cd-faq__group">
-    -->
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>How much data does LiteStar use?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>LiteStar can consume between 200 - 300 MB of data an hour depending on the game</p>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>LiteStar - FAQs</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <div class="container">
+        <br />
+        <div class="" id="accordion">
+            <div class="faqHeader">General questions</div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">How much data does LiteStar use?</a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="card-block">
+                        LiteStar can consume between <strong>200 - 300 MB</strong> of data an hour depending on the game
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">The input lag is too high or my screen is breaking a lot. Why is this so?</a>
+                    </h4>
+                </div>
+                <div id="collapseTen" class="panel-collapse collapse">
+                    <div class="card-block">
+                        The problem is because of your 4G/Wifi network. On 4G, if you’re too far from the nearest cell tower, then your experience will be very poor. To find the closest cell tower to your location use the following options:
+                        <ul>
+                            <li>For Coverage in Your Area: http://www.coveragemap.trai.gov.in/</li>
+                            <li>For Airtel: https://www.airtel.in/opennetwork/</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">How to get more game time?</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="card-block">
+                        Simply select the recharge amount in the recharge section and make a payment via PayTM
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">I’m seeing a blank screen in the speed test section. What do i do?</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="card-block">
+                        This usually happens when we can’t connect to your network. It could be due to multiple reasons. Please write to us with your registered Mobile number and device name on <strong>help@litestar.app</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">Do you support any other form of payment?</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="card-block">
+                        Currently we only support PayTM
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">How much bandwidth do I need to play on LiteStar?</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="card-block">
+                        You need minimum 2 Mbps of bandwidth for decent gameplay
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">My game account got banned, what can I do about this?</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="card-block">
+                        Sometimes game developers don’t recognize our systems and can possibly ban your gaming account. Unfortunately, we have no control over this. We can however reset the game for you on LiteStar and help you play again with another account or in Guest Mode
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">Which countries is LiteStar currently available in?</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="card-block">
+                        Currently, we’re only available in India. If you would like us to be available in your country, please write to us at <strong></strong>help@litestar.app</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="card ">
+                <div class="card-header">
+                    <h4 class="card-header">
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven">How do I get in touch with you?</a>
+                    </h4>
+                </div>
+                <div id="collapseEleven" class="panel-collapse collapse">
+                    <div class="card-block">
+                        Just write to us with your registered mobile number and the issue you’re facing on the following email address: <strong>@litestar.app</strong>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>The input lag is too high or my screen is breaking a lot. Why is this so?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>The problem is because of your 4G/Wifi network. On 4G, if you’re too far from the nearest cell tower, then your experience will be very poor.</p><p>To find the closest cell tower to your location use the following options:</p><p>For Coverage in Your Area: http://www.coveragemap.trai.gov.in/<br>For Airtel: https://www.airtel.in/opennetwork/</p>
-        </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>How to get more game time?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>Simply select the recharge amount in the recharge section and make a payment via PayTM</p>
-        </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>I’m seeing a blank screen in the speed test section. What do i do?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>This usually happens when we can’t connect to your network. It could be due to multiple reasons. Please write to us with your registered Mobile number and device name on help@litestar.app</p>
-        </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>Do you support any other form of payment?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>Currently we only support PayTM</p>
-        </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>How much bandwidth do I need to play on LiteStar?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>You need minimum 2 Mbps of bandwidth for decent gameplay</p>
-        </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>My game account got banned, what can I do about this?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>Sometimes game developers don’t recognize our systems and can possibly ban your gaming account. Unfortunately, we have no control over this. We can however reset the game for you on LiteStar and help you play again with another account or in Guest Mode</p>
-        </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>Which countries is LiteStar currently available in?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>Currently, we’re only available in India. If you would like us to be available in your country, please write to us at help@litestar.app</p>
-        </div>
-      </div>
-      </li>
-      <li class="cd-faq__item">
-      <a class="cd-faq__trigger" href="#0"><span>How do I get in touch with you?</span></a>
-      <div class="cd-faq__content">
-        <div class="text-component">
-          <p>Just write to us with your registered mobile number and the issue you’re facing on the following email address: help@litestar.app</p>
-        </div>
-      </div>
-      </li>
-    </ul>
     </div>
-    <a href="#0" class="cd-faq__close-panel text-replace">Close</a>
-    <div class="cd-faq__overlay" aria-hidden="true"></div>
-</section>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script> 
-</body>
+    <style>
+        .faqHeader {
+            font-size: 27px;
+            margin: 20px;
+        }
+        .panel-heading [data-toggle="collapse"]:after {
+            font-family: 'Glyphicons Halflings';
+            content: "e072"; /* "play" icon */
+            float: right;
+            color: #F58723;
+            font-size: 18px;
+            line-height: 22px;
+            /* rotate "play" icon from > (right arrow) to down arrow */
+            -webkit-transform: rotate(-90deg);
+            -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+            -o-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+        }
+        .panel-heading [data-toggle="collapse"].collapsed:after {
+            /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+            -webkit-transform: rotate(90deg);
+            -moz-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            -o-transform: rotate(90deg);
+            transform: rotate(90deg);
+            color: #454444;
+        }
+    </style>
+    </body>
 </html>
