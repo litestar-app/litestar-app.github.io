@@ -17,19 +17,19 @@
             <div class="card ">
                 <div class="card-header">
                     <h4 class="card-header">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse0">Why PUBG controls are not visible?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse0">Why PUBG controls are not visible?</a>
                     </h4>
                 </div>
                 <div id="collapse0" class="panel-collapse collapse">
                     <div class="card-block">
-                        <img src="./image/1.png" width="500" height="333">
+                        <img src="./image/1.png">
                     </div>
                 </div>
             </div>
             <div class="card ">
                 <div class="card-header">
                     <h4 class="card-header">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">How much data does LiteStar use?</a>
+                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse1">How much data does LiteStar use?</a>
                     </h4>
                 </div>
                 <div id="collapse1" class="panel-collapse collapse">
@@ -141,8 +141,11 @@
         </div>
     </div>
     <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
         .faqHeader {
-            font-size: 27px;
             margin: 20px;
         }
         .panel-heading [data-toggle="collapse"]:after {
@@ -150,9 +153,6 @@
             content: "e072"; /* "play" icon */
             float: right;
             color: #F58723;
-            font-size: 18px;
-            line-height: 22px;
-            /* rotate "play" icon from > (right arrow) to down arrow */
             -webkit-transform: rotate(-90deg);
             -moz-transform: rotate(-90deg);
             -ms-transform: rotate(-90deg);
@@ -160,7 +160,6 @@
             transform: rotate(-90deg);
         }
         .panel-heading [data-toggle="collapse"].collapsed:after {
-            /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
             -webkit-transform: rotate(90deg);
             -moz-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
