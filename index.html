@@ -166,6 +166,28 @@
             }
         }
     </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155054144-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155054144-1');
+    </script>
+
+    <script>
+        function downloadApp() {
+            gtag(
+              'event',
+              'download_click',
+              {
+                  event_callback: () => window.location.href = 'http://bit.ly/2KKVnaz'
+              }
+            )
+        }
+    </script>
 </head>
 <body>
 <div id="header">
@@ -181,20 +203,20 @@
     <div id="main-2" class="main"><img src="./image/logo.png" />LITESTAR</div>
     <div id="main-3" class="main">IS THE SOLUTION FOR YOU!</div>
     <div id="main-4" class="main">
-        <div id="download-button" onclick="location.href='http://bit.ly/2KKVnaz'">
+        <div id="download-button" onclick="downloadApp()">
             <div style="font-size: 24px">Download Now</div>
             <div style="font-size: 12px">For Android</div>
             <div style="margin-top: 10px;"><img src="./image/logo.png" /><img src="./image/android.png" /></div>
         </div>
     </div>
-<div id="footer">
-    <ul>
-        <li style="cursor:text;">LiteStar</li>
-        <li style="cursor:text;">Privacy Policy</li>
-        <li style="cursor:text;">Terms and Conditions</li>
-        <li style="cursor:text;">About LiteStar</li>
-        <li style="cursor:text;">Copyright &copy; 2019-2020, LiteStar.app </li>
-    </ul>
-</div>
+    <div id="footer">
+        <ul>
+            <li style="cursor:text;">LiteStar</li>
+            <li style="cursor:text;">Privacy Policy</li>
+            <li style="cursor:text;">Terms and Conditions</li>
+            <li style="cursor:text;">About LiteStar</li>
+            <li style="cursor:text;">Copyright &copy; 2019-2020, LiteStar.app </li>
+        </ul>
+    </div>
 </body>
 </html>
