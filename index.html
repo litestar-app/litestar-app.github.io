@@ -178,12 +178,13 @@
     </script>
 
     <script>
+        var apkurl = 'https://github.com/litestar-app/litestar-app.github.io/releases/download/2.0.7/LiteStar.apk'
         function downloadApp() {
             gtag(
               'event',
               'download_click',
               {
-                  event_callback: () => window.location.href = 'http://bit.ly/2KKVnaz'
+                  event_callback: () => window.location.href = apkurl
               }
             )
         }
