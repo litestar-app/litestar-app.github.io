@@ -188,9 +188,30 @@
               }
             )
         }
+
+        function getLiteStarVersion() {
+            const xmlhttp = new XMLHttpRequest();
+            const apiurl = "https://api.github.com/repos/litestar-app/litestar-app.github.io/releases";
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    const json = JSON.parse(this.responseText);
+                    const tag = json[0]["tag_name"];
+                    const download = document.getElementById('download');
+                    if (download) download.innerHTML = "Download Now (v" + tag + ")";
+                    if (tag && json) {
+                        apkurl = json[0]["assets"][0]["browser_download_url"];
+                    }
+                }
+            }
+            xmlhttp.open("GET", apiurl, true);
+            xmlhttp.send();
+        }
+        function onload() {
+            getLiteStarVersion();
+        }
     </script>
 </head>
-<body>
+<body onload=onload()>
 <div id="header">
     <img id="logo" src="./image/litestar.png" />
     <ul>
@@ -205,8 +226,7 @@
     <div id="main-3" class="main">IS THE SOLUTION FOR YOU!</div>
     <div id="main-4" class="main">
         <div id="download-button" onclick="downloadApp()">
-            <div style="font-size: 24px">Download Now</div>
-            <div style="font-size: 12px">For Android</div>
+            <div style="font-size: 24px" id="download">Download Now</div>
             <div style="margin-top: 10px;"><img src="./image/logo.png" /><img src="./image/android.png" /></div>
         </div>
     </div>
